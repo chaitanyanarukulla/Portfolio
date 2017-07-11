@@ -50,3 +50,12 @@ table {
 }
 
 /* Main CSS Styling */
+header{
+	background-color: gray;
+	height: 60px;
+}
+#navbar ul  {
+	background-color: red;
+	display:block;
+
+}
