@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="CSS/reset.css"></link>
-  <link rel="stylesheet" href="CSS/base.css"></link>
-  <link rel="stylesheet" href="CSS/layout.css"></link>
-  <link rel="stylesheet" href="CSS/module.css"></link>
-
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/reset.css"></link>
+    <link rel="stylesheet" href="CSS/base.css"></link>
+    <link rel="stylesheet" href="CSS/layout.css"></link>
+    <link rel="stylesheet" href="CSS/module.css"></link>
+    <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+    <title>Portfolio</title>
 </head>
-<body>
-<header>
-  <h1>Chaitanya.Narukulla</h1>
-  <div class="navbar">
-    <ul>
-        <li>About-Me</li>
-        <li>Contact</li>
-        <li>Projects</li>
-    </ul>
-  </div>
-</header>
+<header class="site-header clearfix">
+    <section class="heading-group-h1">
+      <h1>
+      Chaitnay.Narukulla
+      </h1>
+    </section>
+    <nav class="main-nav">
+      <div class="icon-menu"></div>
+      <ul>
+        <li class="tab"><a href="#" class="icon-home"> Home</a></li>
+        <li class="tab"><a href="#" class="icon-address-book"> About</a></li>
+        <li><a href="#" target="_blank" class="icon-twitter3"> Twitter</a></li>
+        <li><a href="#" target="_blank" class="icon-github"> GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="projects">
+      <article class="template" data-category="cat">
+        <header>
+          <h1>Title</h1>
+          <div class="byline">
+             <address><a href=""></a></address>
+            complatedOn blished <time pubdate datetime="2000-01-01">Publish Time</time>
+          </div>
+        </header>
+        <section class="body"></section>
+      </article>
+    </section>
+  </main>
+  <footer>
+    &copy; 2017 chaitanya.narukulla
+  </footer>
+  <script src="app.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="rawData.js" type="text/javascript"></script>
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src = "app.js" type="text/javascript"></script>
 </body>
 </html>
