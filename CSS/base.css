@@ -1,8 +1,12 @@
 header{
-  background-color: red;
+
+
 }
 body{
 background-color: green;
+max-width: 960px;
+text-align: center;
+margin: auto;
 }
 .main-nav{
   float: right;
@@ -11,4 +15,17 @@ background-color: green;
 .main-nav li{
   display: inline-block;
   padding: 20px;
+}
+@media (min-width: 800px) {
+  nav i.fa.fa-bars{
+  display:none;
+ }
+}
+
+@media (max-width: 800px) {
+  .main-nav ul {
+    display: none;
+    padding: 1px;
+    clear: both;
+  }
 }
