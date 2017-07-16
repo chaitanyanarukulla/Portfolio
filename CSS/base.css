@@ -1,16 +1,21 @@
 
 body {
   background-image: url('../images/back.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  opacity:.9;
-  max-width: 960px;
+
   text-align: center;
   margin: auto;
-  color:#D6DBDF;
-
+  color: 	#87CEFA;
+  font-family: 'Share', cursive;
+}
+footer{
+  background-color: #87CEFA;
+  height: 20px;
+  bottom: 0px;
 }
 .main-nav{
-  float: right;
+
   font-size: 35px;
 }
 .main-nav li{

@@ -20,36 +20,40 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="CSS/normalize.css">
-  <link rel="stylesheet" href="CSS/skeleton.css">
-  <link rel="stylesheet" href="CSS/base.css">
-  <link rel="stylesheet" href="CSS/layout.css">
-  <link rel="stylesheet" href="CSS/module.css">
-  <link rel="stylesheet" href="Vendors/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="CSS/normalize.css"/>
+  <link rel="stylesheet" href="CSS/skeleton.css"/>
+  <link rel="stylesheet" href="CSS/base.css"/>
+  <link rel="stylesheet" href="CSS/layout.css"/>
+  <link rel="stylesheet" href="CSS/module.css"/>
+  <link rel="stylesheet" href="Vendors/font-awesome-4.7.0/css/font-awesome.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Share" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src = "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js">
   </script>
+  <script type="text/javascript" href="blueberry.css"/></script>
+
+
 </head>
 <body>
     <div class="container" class="header" style="margin-top: 2%">
     <header>
       <!-- columns should be the immediate child of a .row -->
     <div class="row">
-    <div class="one column"><h1>Chaitanya.Narukulla</h1></div>
+    <!-- <div class="one column"> -->
     <div class="eleven columns">
       <nav class="main-nav">
+      <h1>Chaitanya.Narukulla</h1>
       <i id="ham" class="fa fa-bars" aria-hidden="true"></i>
           <ul class="list">
               <li><a href="index.html" target="_blank" ><i class="fa fa-home" aria-hidden="true"></i></a></li>
               <li><a href="#" target="_blank" ><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
               <li><a href="http://github.com" target="_blank" > <i class="fa   fa-github-square" aria-hidden="true"></i></a></li>
               <li><a href="http://twitter.com" target="_blank" > <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="www.linkedin.com/in/chaitanya-narukulla-b14551146" target="_blank"></a>
-              <i class="fa fa-linkedin-square" aria-hidden="true"></i></li>
+              <li><a href="http://linkedin.com" target="_blank">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
           </ul>
     </nav>
-  </div>
-  </div>
+  </div></div>
 </header>
   </div>
   <!-- Primary Page Layout
@@ -57,31 +61,60 @@
   <div class="container">
     <div class="row">
       <div class="twelve columns" style="margin-top: 9%">
-        <h4>Project Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3>"The secret of change is to focus all your energy not on fighting the old, but on building the new.”-- Socrates</h3>
       </div>
     </div>
+  </div>
+<div class="container">
+  <div class="row">
+   <div class="three column" style="margin-top: 1%">
+  <button class="aboutMe" type="button" name="button">About Me</button>
+  <button class="game" type="button" name="button">Blogs from ME</button>
+  <button class="showpro" type="button" name="button">Checkout My Recent Projects</button>
+  </div></div></div>
 
-    <div class="row">
+  <div class="container">
+<div class="row">
+  <div class="eleven column">
+    <div id="aboutMe">
+      <img src="images/chai.png" alt="">
+      <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </h4>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+<div class="eleven column">
+  <div id="game">
+    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </h4>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="row">
       <div class ="twelve columns"><h2>
-<div id="articles">
-<script id="myprojectsList-template" type="text/x-handlebars-template">
-<li class="project">
-  <h2> {{title}}</h2>
-<img src="{{image}}">
-<h2>{{category}}</h2>
-<h2> {{complatedOn}}<h2>
-</li>
-</script>
-</div>
-</div>
-</div>
+      <div id="articles">
+        <script id="myprojectsList-template" type="text/x-handlebars-template">
+          <li class="project">
+            <h2> {{title}}</h2>
+            <img src="{{image}}">
+            <h2>{{category}}</h2>
+            <h3> {{complatedOn}}<h3>
+          </li>
+      </script>
+</div></div></div>
+
+  <footer>
+
+  </footer>
 
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script type="text/javascript" src="rawData.js"></script>
-<script type="text/javascript" src="app.js"></script>
-
+    <script type="text/javascript" src="rawData.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
