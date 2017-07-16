@@ -1,31 +1,39 @@
-header{
 
+body {
+  background-image: url('../images/back.jpg');
+  background-size: cover;
+  opacity:.9;
+  max-width: 960px;
+  text-align: center;
+  margin: auto;
+  color:#D6DBDF;
 
-}
-body{
-background-color: green;
-max-width: 960px;
-text-align: center;
-margin: auto;
 }
 .main-nav{
   float: right;
-  font-size: 30px;
+  font-size: 35px;
 }
 .main-nav li{
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
 }
-@media (min-width: 800px) {
+@media (min-width:875px) {
+
   nav i.fa.fa-bars{
   display:none;
  }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 875px) {
   .main-nav ul {
     display: none;
     padding: 1px;
     clear: both;
   }
+}
+#ham{
+  padding-right:20px;
+}
+.project{
+  display: inline-block;
 }

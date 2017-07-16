@@ -1,20 +1,23 @@
 'use strict';
 var rawData = [{
     title: 'Busmall',
-    image: 'images/pic17.jpg',
+    image: 'images/bg.png',
     projectUrl: 'www.busmall.com',
-    complatedOn: '2017-11-06'
+    complatedOn: '2017-11-06',
+    catagory: 'ProductReview'
   },
   {
     title: 'SamsCookies',
-    image: 'images/pic17.jpg',
+    image: 'images/t14.png',
     projectUrl: 'www.SamsCookies.com',
-    complatedOn: '2017-11-05'
+    complatedOn: '2017-11-05',
+    catagory: 'Store-Data'
   },
   {
-    title: 'CodegraphicMemory',
-    image: 'images/pic17.jpg',
+    title: 'Codegraphic',
+    image: 'images/bg.png',
     projectUrl: 'www.potgarapghy.com',
-    complatedOn: '2017-11-04'
-  },
-];
+    complatedOn: '2017-11-04',
+    catagory: 'Game'
+  }
+]
