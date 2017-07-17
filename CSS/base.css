@@ -1,7 +1,6 @@
 
 body {
   background-image: url('../images/back.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
 
   text-align: center;
@@ -25,7 +24,7 @@ footer{
 @media (min-width:875px) {
 
   nav i.fa.fa-bars{
-  display:none;
+  /*display:none;*/
  }
 }
 
