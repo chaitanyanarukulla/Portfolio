@@ -38,7 +38,7 @@ $(document).ready(function() {
   // Constructor function
 
   var projects = [];
-  Projects.all = [];
+  // Projects.all = [];
 
   function Project(rawDataObj) {
     this.title = rawDataObj.title;
@@ -46,7 +46,6 @@ $(document).ready(function() {
     this.image = rawDataObj.image;
     this.catagory = rawDataObj.catagory;
     this.complatedOn = rawDataObj.complatedOn;
-    this.all.push(this)
   }
   // grab the template  and compile
   Project.prototype.toHtml = function() {
@@ -54,8 +53,8 @@ $(document).ready(function() {
 
     var myprojectsList = $('#myprojectsList-template').html();
     var compiled = Handlebars.compile(myprojectsList);
-    // $('#articles').append(compile(this));
-    return compiled(this);
+    $('#articles').append(compiled(this));
+    // return compiled(this);
   };
 
   rawData.forEach(function(projectObject) {
@@ -82,3 +81,4 @@ Projects.fetchAll = function() {
       })
   }
 }
+Projects.fetchAll();
