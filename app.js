@@ -81,4 +81,4 @@ Projects.fetchAll = function() {
       })
   }
 }
-Projects.fetchAll();
+// Projects.fetchAll();
