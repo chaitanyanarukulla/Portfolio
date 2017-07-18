@@ -38,6 +38,7 @@ $(document).ready(function() {
   // Constructor function
 
   var projects = [];
+  Projects.all = [];
 
   function Project(rawDataObj) {
     this.title = rawDataObj.title;
@@ -45,6 +46,7 @@ $(document).ready(function() {
     this.image = rawDataObj.image;
     this.catagory = rawDataObj.catagory;
     this.complatedOn = rawDataObj.complatedOn;
+    this.all.push(this)
   }
   // grab the template  and compile
   Project.prototype.toHtml = function() {
@@ -64,3 +66,19 @@ $(document).ready(function() {
     $('#articles').append(Project.toHtml());
   });
 });
+
+Projects.fetchAll = function() {
+  if (localStorage.rawData) {
+    Projects.loadAll(JSON.parse(localStorage.rawData));
+  } else {
+
+    $.getJSON('rawData.jason')
+      .then(function(data) {
+        localStorage.setItem('rawData', JSON.stringify(data))
+        console.log('SUCCESS!' + data)
+        Projects.loadAll(JSON.parse(localStorage.rawData))
+      }, function(err) {
+        console.error('Error Has Occured' + err)
+      })
+  }
+}
