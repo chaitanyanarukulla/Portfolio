@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 $(document).ready(function() {
   // hamburger menu
   $(function() {
@@ -9,8 +9,8 @@ $(document).ready(function() {
     // show and hide projects
     $('#articles').hide();
     $('.showpro').click(function() {
-      if ($('#articles').is(":hidden")) {
-        $('#articles').slideDown("slow");
+      if ($('#articles').is(':hidden')) {
+        $('#articles').slideDown('slow');
       } else {
         $('#articles').hide();
       }
@@ -18,8 +18,8 @@ $(document).ready(function() {
 
     $('#aboutMe').hide();
     $('.aboutMe').click(function() {
-      if ($('#aboutMe').is(":hidden")) {
-        $('#aboutMe').slideDown("slow");
+      if ($('#aboutMe').is(':hidden')) {
+        $('#aboutMe').slideDown('slow');
       } else {
         $('#aboutMe').hide();
       }
@@ -27,8 +27,8 @@ $(document).ready(function() {
   });
   $('#game').hide();
   $('.game').click(function() {
-    if ($('#game').is(":hidden")) {
-      $('#game').slideDown("slow");
+    if ($('#game').is(':hidden')) {
+      $('#game').slideDown('slow');
     } else {
       $('#game').hide();
     }
